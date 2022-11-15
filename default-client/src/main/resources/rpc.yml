@@ -1,0 +1,3 @@
+kale-rpc:
+  client:
+    serializer: json

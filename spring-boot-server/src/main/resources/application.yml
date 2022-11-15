@@ -1,0 +1,9 @@
+kale-rpc:
+  transporter: netty
+  server:
+    port: 12800
+    mq: local
+    mq-address: 172.21.0.10:9876
+  register-center:
+    name: zk
+    address: 127.0.0.1:2181

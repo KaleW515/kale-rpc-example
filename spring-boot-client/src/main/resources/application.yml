@@ -1,0 +1,9 @@
+kale-rpc:
+  transporter: netty
+  client:
+    load-balancer: min-call
+    timeout: 1000
+    fail-strategy: fail-safe
+  register-center:
+    name: zk
+    address: 127.0.0.1:2181
