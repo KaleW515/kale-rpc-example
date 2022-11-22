@@ -38,5 +38,18 @@
             <version>2.7.5</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.kalew515.example.client.NettyExampleClient</mainClass>
+                    <layout>JAR</layout>
+                    <!--构建完整可执行程序，可以直接运行-->
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
